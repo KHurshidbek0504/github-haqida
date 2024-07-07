@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+    /* margin-top: 50px; */
+}
+
+#text {
+    /* display: inline-block; */
+    transition: color 1s;
+    color: black;
+    margin-top: 100px;
+}
+
+#Button {
+    margin-top: 50px;
+    transition: color 1s;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#Button:hover{
+    background-color: green;
+}
+
+@keyframes rotateAndMove {
+    0% {
+        transform: rotate(0deg);
+        color: black;
+    }
+    100% {
+        transform: rotate(360deg) translateY(150px) translateX(150px);
+        color: red;
+    }
+}
+
+.animate {
+    animation: rotateAndMove 5s forwards;
+}
